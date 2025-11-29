@@ -31,20 +31,20 @@ export function ContactSection() {
     {
       icon: "✉️",
       title: "Email",
-      value: "hello@revanshu.me",
-      link: "mailto:hello@revanshu.me",
+      value: "Gitanjalisoni2003@gmail.com",
+      link: "mailto:Gitanjalisoni2003@gmail.com",
     },
     {
       icon: "💼",
       title: "LinkedIn",
-      value: "linkedin.com/in/revanshu",
-      link: "https://linkedin.com",
+      value: "linkedin.com/in/gitanjali-soni",
+      link: "https://www.linkedin.com/in/gitanjali-soni",
     },
     {
       icon: "🐙",
       title: "GitHub",
-      value: "github.com/revanshu",
-      link: "https://github.com",
+      value: "github.com/gitanjali1909",
+      link: "https://github.com/gitanjali1909",
     },
   ]
 
@@ -183,7 +183,7 @@ export function ContactSection() {
               <h4 className="text-foreground font-semibold mb-4">Follow Me</h4>
               <div className="flex gap-4">
                 <a
-                  href="https://twitter.com"
+                  href="https://x.com/gitanjalihihi"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-12 h-12 bg-card border border-border rounded-lg flex items-center justify-center hover:border-secondary hover:bg-secondary/10 transition-colors text-lg"
@@ -191,7 +191,7 @@ export function ContactSection() {
                   𝕏
                 </a>
                 <a
-                  href="https://github.com"
+                  href="https://github.com/gitanjali1909"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-12 h-12 bg-card border border-border rounded-lg flex items-center justify-center hover:border-secondary hover:bg-secondary/10 transition-colors text-lg"
@@ -199,7 +199,7 @@ export function ContactSection() {
                   🐙
                 </a>
                 <a
-                  href="https://linkedin.com"
+                  href="https://www.linkedin.com/in/gitanjali-soni"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-12 h-12 bg-card border border-border rounded-lg flex items-center justify-center hover:border-secondary hover:bg-secondary/10 transition-colors text-lg"

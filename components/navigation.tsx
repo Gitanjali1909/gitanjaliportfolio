@@ -41,8 +41,8 @@ export function Navigation() {
           {/* Action Buttons */}
           <div className="hidden md:flex gap-3 items-center">
             <a
-              href="/Revanshu-Resume.pdf"
-              download="Revanshu-Resume.pdf"
+              href="/Gitanjali-Resume.pdf"
+              download="Gitanjali-Resume.pdf"
               className="rounded-lg font-bold text-sm transition-all duration-300 px-6 py-3 bg-primary text-black hover:shadow-lg hover:shadow-primary/50"
             >
               RESUME
@@ -85,8 +85,8 @@ export function Navigation() {
               </Link>
             ))}
             <a
-              href="/Revanshu-Resume.pdf"
-              download="Revanshu-Resume.pdf"
+              href="/Gitanjali-Resume.pdf"
+              download="Gitanjali-Resume.pdf"
               className="rounded-lg font-bold text-sm transition-all duration-300 px-6 py-3 bg-primary text-black hover:shadow-lg hover:shadow-primary/50 text-center"
             >
               DOWNLOAD RESUME

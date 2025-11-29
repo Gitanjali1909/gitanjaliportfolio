@@ -53,8 +53,8 @@ export default function Home() {
                   Portfolio
                 </Link>
                 <a
-                  href="/Revanshu-Resume.pdf"
-                  download="Revanshu-Resume.pdf"
+                  href="/Gitanjali-Resume.pdf"
+                  download="Gitanjali-Resume.pdf"
                   className="rounded-lg font-bold text-sm transition-all duration-300 px-6 py-3 border-2 border-primary text-primary hover:bg-primary/10 text-center"
                 >
                   Get Resume
@@ -64,7 +64,7 @@ export default function Home() {
               {/* Social Links */}
               <div className="flex gap-6 pt-4">
                 <a
-                  href="https://github.com"
+                  href="https://github.com/gitanjali1909"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-muted-foreground hover:text-secondary transition-colors text-sm font-semibold"
@@ -72,7 +72,7 @@ export default function Home() {
                   GitHub
                 </a>
                 <a
-                  href="https://twitter.com"
+                  href="https://x.com/gitanjalihihi"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-muted-foreground hover:text-secondary transition-colors text-sm font-semibold"
@@ -80,7 +80,7 @@ export default function Home() {
                   Twitter
                 </a>
                 <a
-                  href="https://linkedin.com"
+                  href="https://www.linkedin.com/in/gitanjali-soni"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-muted-foreground hover:text-secondary transition-colors text-sm font-semibold"
@@ -99,8 +99,8 @@ export default function Home() {
                 {/* Avatar Image */}
                 <div className="relative z-10 w-72 h-80 bg-gradient-to-br from-secondary to-primary/30 rounded-2xl overflow-hidden flex items-center justify-center shadow-2xl">
                   <Image
-                    src="/anime-character-developer-designer.jpg"
-                    alt="Revanshu Avatar"
+                    src="/phool.jpg"
+                    alt="Gitanjali"
                     width={288}
                     height={320}
                     className="w-full h-full object-cover"
@@ -122,11 +122,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-
-      {/* Contact Section */}
       <ContactSection />
-
-      <Footer />
     </main>
   )
 }
