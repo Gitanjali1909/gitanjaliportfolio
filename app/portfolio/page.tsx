@@ -1,7 +1,6 @@
 "use client"
 
 import { Navigation } from "@/components/navigation"
-import { Footer } from "@/components/footer"
 import Image from "next/image"
 import { useState } from "react"
 
@@ -9,61 +8,87 @@ export default function Portfolio() {
   const [selectedCategory, setSelectedCategory] = useState("all")
 
   const projects = [
-    {
-      id: 1,
-      title: "E-Commerce Platform",
-      category: "web",
-      description: "Full-stack e-commerce solution with payment integration",
-      image: "/ecommerce-dashboard.png",
-      tags: ["React", "Node.js", "PostgreSQL", "Stripe"],
-      link: "#",
-    },
-    {
-      id: 2,
-      title: "AI Chat Application",
-      category: "web",
-      description: "Real-time chat app with AI-powered responses",
-      image: "/ai-chat-interface.png",
-      tags: ["Next.js", "WebSocket", "Python", "OpenAI"],
-      link: "#",
-    },
-    {
-      id: 3,
-      title: "Sales Prediction Model",
-      category: "data",
-      description: "Machine learning model for predicting sales trends",
-      image: "/analytics-dashboard-charts.png",
-      tags: ["Python", "TensorFlow", "Pandas", "Scikit-learn"],
-      link: "#",
-    },
-    {
-      id: 4,
-      title: "Mobile App - Task Manager",
-      category: "web",
-      description: "Cross-platform task management application",
-      image: "/mobile-task-manager-app.jpg",
-      tags: ["React Native", "Firebase", "Redux"],
-      link: "#",
-    },
-    {
-      id: 5,
-      title: "Customer Analytics Dashboard",
-      category: "data",
-      description: "Advanced data visualization for customer insights",
-      image: "/analytics-dashboard-charts.png",
-      tags: ["Python", "Plotly", "SQL", "Apache Spark"],
-      link: "#",
-    },
-    {
-      id: 6,
-      title: "Real-time Analytics Platform",
-      category: "web",
-      description: "Real-time analytics dashboard with data visualization",
-      image: "/analytics-dashboard-charts.png",
-      tags: ["React", "D3.js", "Node.js", "MongoDB"],
-      link: "#",
-    },
-  ]
+  {
+    id: 1,
+    title: "SkillSync – AI Quiz Platform",
+    category: "web",
+    description:
+      "Level-based quiz app with real-time AI support, smooth animations, and fully responsive UI.",
+    image: "/skillsync.png",
+    tags: ["Next.js", "Zustand", "Tailwind", "Framer Motion", "OpenRouter API"],
+    link: "https://skill-sync--eight.vercel.app/",
+  },
+  {
+    id: 2,
+    title: "Petrol Pump Ratings Dashboard",
+    category: "data",
+    description:
+      "Interactive dashboard with geo-maps, filters, review submissions, and rating analysis.",
+    image: "/petrol.jpg",
+    tags: ["Python", "Streamlit", "Pandas", "Geo Maps"],
+    link: "https://github.com/Gitanjali1909/Petrol-station",
+  },
+  {
+    id: 3,
+    title: "NextRead – Book Recommendation Engine",
+    category: "data",
+    description:
+      "Recommender system using TF-IDF + Cosine Similarity with clean, interactive output.",
+    image: "/nextread.jpg",
+    tags: ["Python", "TF-IDF", "Cosine Similarity", "Pandas"],
+    link: "https://github.com/Gitanjali1909/Book-Recommendation-system",
+  },
+  {
+    id: 4,
+    title: "Live Translate – Real-Time Language Translator",
+    category: "web",
+    description:
+      "Speech-to-text, instant translation, dark UI, and smooth animations.",
+    image: "/live-translate.jpg",
+    tags: ["Next.js", "TypeScript", "Tailwind", "Framer Motion"],
+    link: "https://live-translation-blond.vercel.app/",
+  },
+  {
+    id: 5,
+    title: "Music Streaming Analytics Dashboard",
+    category: "data",
+    description:
+      "Spotify-style analytics platform showing user patterns, playlists, trends & listening behavior.",
+    image: "/music.png",
+    tags: ["Python", "Streamlit", "PostgreSQL", "Pandas"],
+    link: "https://github.com/Gitanjali1909/music-streaming",
+  },
+  {
+    id: 6,
+    title: "Social Media Trends Analyzer",
+    category: "data",
+    description:
+      "Trend tracker with hashtag patterns, visualizations, heatmaps, and engagement insights.",
+    image: "/trends.jpg",
+    tags: ["Python", "Pandas", "Seaborn", "WordCloud"],
+    link: "https://github.com/Gitanjali1909/Social-Media-Trends-Analyzer",
+  },
+  {
+    id: 7,
+    title: "Student Stress Analyzer",
+    category: "data",
+    description:
+      "EDA project analyzing stress factors using correlations and visualization patterns.",
+    image: "/stress.jpg",
+    tags: ["Python", "Pandas", "Matplotlib", "Seaborn"],
+    link: "https://github.com/Gitanjali1909/Student-Stress-Analyzer",
+  },
+  {
+    id: 8,
+    title: "Plan It Grand – Event Manager Finder",
+    category: "web",
+    description:
+      "React-based platform to explore and connect with event managers effortlessly.",
+    image: "/plan.jpg",
+    tags: ["React.js", "Tailwind CSS"],
+    link: "https://gilded-raindrop-09e1a8.netlify.app/",
+  },
+]
 
   const categories = [
     { id: "all", label: "All Projects" },
@@ -91,7 +116,7 @@ export default function Portfolio() {
               Selected <span className="gradient-text">Work</span>
             </h1>
             <p className="text-lg text-muted-foreground max-w-2xl">
-              A collection of projects showcasing my expertise in full-stack development and data science.
+              A collection of projects showcasing my skills in frontend development, interactive UI, and data-driven solutions.
             </p>
           </div>
 
@@ -126,7 +151,7 @@ export default function Portfolio() {
                   background: "linear-gradient(135deg, rgba(59, 130, 246, 0.05) 0%, rgba(236, 72, 153, 0.05) 100%)",
                 }}
               >
-                {/* Project Image */}
+
                 <div className="relative h-64 overflow-hidden bg-card/50">
                   <Image
                     src={project.image || "/placeholder.svg?height=300&width=400&query=project"}
@@ -143,7 +168,6 @@ export default function Portfolio() {
                   </div>
                 </div>
 
-                {/* Project Info */}
                 <div className="flex-1 p-6 flex flex-col gap-4">
                   <div>
                     <h3 className="text-2xl font-bold text-foreground group-hover:bg-gradient-to-r group-hover:from-blue-400 group-hover:to-pink-400 group-hover:bg-clip-text group-hover:text-transparent transition-all mb-2">
@@ -152,7 +176,6 @@ export default function Portfolio() {
                     <p className="text-muted-foreground text-sm leading-relaxed">{project.description}</p>
                   </div>
 
-                  {/* Tags */}
                   <div className="flex flex-wrap gap-2 mt-auto">
                     {project.tags.slice(0, 4).map((tag) => (
                       <span
@@ -169,7 +192,6 @@ export default function Portfolio() {
                     ))}
                   </div>
 
-                  {/* View Project Link */}
                   <div className="flex items-center gap-2 text-blue-500 font-semibold group-hover:gap-3 transition-all w-fit mt-4 text-sm">
                     View Project
                     <span className="group-hover:translate-x-1 transition-transform">→</span>

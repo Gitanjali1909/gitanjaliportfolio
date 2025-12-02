@@ -1,16 +1,15 @@
 import type React from "react"
 import type { Metadata } from "next"
 import { Geist, Geist_Mono } from "next/font/google"
-import { Analytics } from "@vercel/analytics/next"
 import "./globals.css"
 
 const _geist = Geist({ subsets: ["latin"] })
 const _geistMono = Geist_Mono({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "Gitanjali | Portfolio",
-  description: "Developer & Designer - Building amazing digital experiences",
-  generator: "v0.app",
+  title: "Gitanjali Soni | Portfolio",
+  description: "Frontend Developer & Data Analytics — building clean, fast, user-first experiences.",
+  generator: "Gitanjali Portfolio",
   icons: {
     icon: [
       {
@@ -38,13 +37,12 @@ export default function RootLayout({
   return (
     <html lang="en" className="dark">
       <head>
-        <meta httpEquiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+        <meta httpEquiv="Cache-Control" content="no-store" />
         <meta httpEquiv="Pragma" content="no-cache" />
         <meta httpEquiv="Expires" content="0" />
       </head>
       <body className={`font-sans antialiased`}>
         {children}
-        <Analytics />
       </body>
     </html>
   )

@@ -1,7 +1,6 @@
 "use client"
 
 import type React from "react"
-
 import { useState } from "react"
 
 export function ContactSection() {
@@ -20,7 +19,6 @@ export function ContactSection() {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault()
-    // Here you would typically send the form data to your backend
     console.log("Form submitted:", formData)
     setIsSubmitted(true)
     setFormData({ name: "", email: "", subject: "", message: "" })
@@ -61,11 +59,13 @@ export function ContactSection() {
             <span className="glow-text">Get In Touch</span>
           </h2>
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-            Have a project in mind? Let's collaborate and create something amazing together.
+            Got something cool in mind? Hit me up. I love building clean, modern stuff and I’m always down to 
+            collaborate on projects that actually make sense.
           </p>
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+
           {/* Contact Form */}
           <div className="bg-card border border-border rounded-xl p-8">
             <form onSubmit={handleSubmit} className="space-y-6">
@@ -113,7 +113,7 @@ export function ContactSection() {
                   onChange={handleChange}
                   required
                   className="w-full px-4 py-2 bg-background border border-border rounded-lg text-foreground placeholder-muted-foreground focus:outline-none focus:border-secondary transition-colors"
-                  placeholder="Project Inquiry"
+                  placeholder="Let's Build Something"
                 />
               </div>
 
@@ -129,7 +129,7 @@ export function ContactSection() {
                   required
                   rows={4}
                   className="w-full px-4 py-2 bg-background border border-border rounded-lg text-foreground placeholder-muted-foreground focus:outline-none focus:border-secondary transition-colors resize-none"
-                  placeholder="Tell me about your project..."
+                  placeholder="Drop the details—I'm listening."
                 />
               </div>
 
@@ -141,7 +141,9 @@ export function ContactSection() {
               </button>
 
               {isSubmitted && (
-                <p className="text-center text-primary text-sm font-semibold">Thank you! I'll get back to you soon.</p>
+                <p className="text-center text-primary text-sm font-semibold">
+                  Thank you! I'll get back to you soon.
+                </p>
               )}
             </form>
           </div>
@@ -151,8 +153,8 @@ export function ContactSection() {
             <div>
               <h3 className="text-2xl font-bold text-foreground mb-6">Let's Connect</h3>
               <p className="text-muted-foreground leading-relaxed mb-8">
-                Whether you have a project in mind or just want to say hello, feel free to reach out. I'm always excited
-                to discuss new opportunities and collaborate with talented people.
+                Whether you’re planning a project or just vibing with my work, reach out. I’m always open to new ideas, 
+                freelance gigs, internships, collabs—anything that’s actually fun and meaningful.
               </p>
             </div>
 
@@ -206,8 +208,17 @@ export function ContactSection() {
                 >
                   💼
                 </a>
+                <a
+                  href="https://medium.com/@gitanjalisoni"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-12 h-12 bg-card border border-border rounded-lg flex items-center justify-center hover:border-secondary hover:bg-secondary/10 transition-colors text-lg"
+                >
+                  ✍️
+                </a>
               </div>
             </div>
+
           </div>
         </div>
       </div>
