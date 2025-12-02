@@ -20,7 +20,7 @@ export function Navigation() {
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <Link href="/" className="text-2xl font-bold glow-text">
-            GITANJALI.
+            GITANJALI
           </Link>
 
           {/* Desktop Navigation */}
