@@ -17,18 +17,23 @@ export default function Home() {
 
             {/* Left Content */}
             <div className="space-y-6 sm:space-y-8">
-              <div className="space-y-2 sm:space-y-3">
-                <p className="text-muted-foreground text-xs sm:text-sm font-semibold tracking-wide">
-                  I'm
-                </p>
 
-                <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight">
-                  GITANJALI
-                </h1>
+              {/* Name + mobile small image */}
+              <div className="flex items-start justify-between sm:block">
 
-                <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-semibold text-muted-foreground leading-tight">
-                  Frontend Developer & Data Analyst
-                </h2>
+                <div className="space-y-2 sm:space-y-3">
+                  <p className="text-muted-foreground text-xs sm:text-sm font-semibold tracking-wide">
+                    I'm
+                  </p>
+
+                  <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight">
+                    GITANJALI
+                  </h1>
+
+                  <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-semibold text-muted-foreground leading-tight">
+                    Frontend Developer & Data Analyst
+                  </h2>
+                </div>
               </div>
 
               <p className="text-muted-foreground text-sm sm:text-base max-w-md leading-relaxed">
@@ -90,14 +95,14 @@ export default function Home() {
               </div>
             </div>
 
-            {/* Right - Avatar */}
-            <div className="relative h-72 sm:h-80 md:h-96 lg:h-full flex items-center justify-center mt-4 sm:mt-0">
-              <div className="relative w-56 h-72 sm:w-64 sm:h-80 md:w-72 md:h-96">
+            {/* Right - Avatar (ONLY image now) */}
+            <div className="relative h-72 sm:h-80 md:h-96 lg:h-full flex items-center justify-center mt-2 sm:mt-0">
+              <div className="relative w-full max-w-md h-52 sm:h-0 md:h-76">
                 <div className="relative z-10 w-full h-full bg-muted rounded-2xl overflow-hidden flex items-center justify-center shadow-sm border border-border">
                   <Image
                     src="/phool.jpg"
                     alt="Gitanjali"
-                    width={400}
+                    width={600}
                     height={500}
                     className="w-full h-full object-cover"
                     priority
