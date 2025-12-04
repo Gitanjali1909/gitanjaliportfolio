@@ -4,7 +4,7 @@ import { Navigation } from "@/components/navigation"
 import Image from "next/image"
 import { useState } from "react"
 
-export default function Portfolio() {
+export default function Projects() {
   const [selectedCategory, setSelectedCategory] = useState("all")
 
   const projects = [

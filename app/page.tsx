@@ -21,7 +21,7 @@ export default function Home() {
                 <p className="text-muted-foreground text-sm font-semibold tracking-wide">I'm</p>
                 <h1 className="text-6xl lg:text-7xl font-bold tracking-tighter">GITANJALI</h1>
                 <h2 className="text-3xl lg:text-4xl font-semibold text-muted-foreground">
-                  Frontend Developer & Data Analytics
+                  Frontend Developer & Data Analyst
                 </h2>
               </div>
 
@@ -38,10 +38,10 @@ export default function Home() {
                   About Me
                 </Link>
                 <Link
-                  href="/portfolio"
+                  href="/projects"
                   className="rounded-lg font-semibold text-sm transition-all duration-300 px-6 py-3 border border-foreground text-foreground hover:bg-foreground/5 hover:scale-105 text-center"
                 >
-                  Portfolio
+                  Projects
                 </Link>
                 <a
                   href="/Gitanjali-Resume.pdf"
@@ -81,25 +81,6 @@ export default function Home() {
                   LinkedIn
                 </a>
 
-                {/* Subtle LeetCode Link */}
-                <a
-                  href="https://leetcode.com/u/Gitanjalisoni/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-muted-foreground hover:text-foreground transition-colors text-sm font-medium"
-                >
-                  LeetCode
-                </a>
-
-                {/* Subtle Kaggle Link */}
-                <a
-                  href="https://www.kaggle.com/gitanjalisoni"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-muted-foreground hover:text-foreground transition-colors text-sm font-medium"
-                >
-                  Kaggle
-                </a>
               </div>
             </div>
 

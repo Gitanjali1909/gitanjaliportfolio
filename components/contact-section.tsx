@@ -181,43 +181,51 @@ export function ContactSection() {
             </div>
 
             {/* Social Links */}
-            <div>
-              <h4 className="text-foreground font-semibold mb-4">Follow Me</h4>
-              <div className="flex gap-4">
-                <a
-                  href="https://x.com/gitanjalihihi"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="w-12 h-12 bg-card border border-border rounded-lg flex items-center justify-center hover:border-secondary hover:bg-secondary/10 transition-colors text-lg"
-                >
-                  𝕏
-                </a>
-                <a
-                  href="https://github.com/gitanjali1909"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="w-12 h-12 bg-card border border-border rounded-lg flex items-center justify-center hover:border-secondary hover:bg-secondary/10 transition-colors text-lg"
-                >
-                  🐙
-                </a>
-                <a
-                  href="https://www.linkedin.com/in/gitanjali-soni"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="w-12 h-12 bg-card border border-border rounded-lg flex items-center justify-center hover:border-secondary hover:bg-secondary/10 transition-colors text-lg"
-                >
-                  💼
-                </a>
-                <a
-                  href="https://medium.com/@gitanjalisoni"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="w-12 h-12 bg-card border border-border rounded-lg flex items-center justify-center hover:border-secondary hover:bg-secondary/10 transition-colors text-lg"
-                >
-                  ✍️
-                </a>
-              </div>
-            </div>
+            {/* Social Links */}
+<div>
+  <h4 className="text-foreground font-semibold mb-4">Follow Me</h4>
+
+  <div className="flex gap-4 flex-wrap">
+    <a
+      href="https://x.com/gitanjalihihi"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="w-12 h-12 bg-card border border-border rounded-lg flex items-center justify-center hover:border-secondary hover:bg-secondary/10 transition-colors text-lg"
+    >
+      𝕏
+    </a>
+
+    <a
+      href="https://medium.com/@gitanjalisoni"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="w-12 h-12 bg-card border border-border rounded-lg flex items-center justify-center hover:border-secondary hover:bg-secondary/10 transition-colors text-lg"
+    >
+      ✍️
+    </a>
+
+    {/* LeetCode */}
+    <a
+      href="https://leetcode.com/u/Gitanjalisoni/"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="w-12 h-12 bg-card border border-border rounded-lg flex items-center justify-center hover:border-secondary hover:bg-secondary/10 transition-colors text-lg"
+    >
+      🧩
+    </a>
+
+    {/* Kaggle */}
+    <a
+      href="https://www.kaggle.com/gitanjalisoni"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="w-12 h-12 bg-card border border-border rounded-lg flex items-center justify-center hover:border-secondary hover:bg-secondary/10 transition-colors text-lg"
+    >
+      📊
+    </a>
+  </div>
+</div>
+
 
           </div>
         </div>
