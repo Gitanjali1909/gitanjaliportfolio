@@ -48,7 +48,7 @@ export default function Projects() {
       id: 5,
       title: "Music Streaming Analytics Dashboard",
       category: "data",
-      description: "Spotify-style analytics platform showing user patterns, playlists, trends & listening behavior.",
+      description: "Analytics platform showing user patterns, playlists, trends & listening behavior.",
       image: "/music.png",
       tags: ["Python", "Streamlit", "PostgreSQL", "Pandas"],
       link: "https://github.com/Gitanjali1909/music-streaming",
@@ -95,17 +95,20 @@ export default function Projects() {
     <main className="min-h-screen bg-background">
       <Navigation />
 
-      <section className="relative pt-32 pb-20">
+      <section className="relative pt-20 pb-10 sm:pt-32 sm:pb-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="mb-16">
-            <h1 className="text-6xl lg:text-7xl font-bold mb-6 leading-tight text-foreground">Work</h1>
-            <p className="text-lg text-muted-foreground max-w-2xl leading-relaxed">
-              A collection of projects showcasing my skills in frontend development, interactive UI, and data-driven
-              solutions.
+
+          <div className="mb-10 sm:mb-16">
+            <h1 className="text-4xl sm:text-6xl lg:text-7xl font-bold mb-4 sm:mb-6 leading-tight text-foreground">
+              Work
+            </h1>
+            <p className="text-base sm:text-lg text-muted-foreground max-w-2xl leading-relaxed">
+              A showcase of my work in frontend development, interactive UI, and data-driven solutions.
             </p>
           </div>
 
-          <div className="flex gap-2 overflow-x-auto pb-4">
+          {/* Category Filters */}
+          <div className="flex gap-2 overflow-x-auto pb-3 sm:pb-4 no-scrollbar">
             {categories.map((cat) => (
               <button
                 key={cat.id}
@@ -123,22 +126,23 @@ export default function Projects() {
         </div>
       </section>
 
-      <section className="py-20 border-t border-border">
+      {/* Project Cards */}
+      <section className="pb-10 ">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
             {filteredProjects.map((project) => (
               <a
                 key={project.id}
                 href={project.link}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="group flex flex-col h-full transition-all duration-300 hover:translate-y-[-2px]"
+                className="group flex flex-col h-full transition-all duration-300 hover:translate-y-[-3px]"
               >
-                <div className="border border-border rounded-lg overflow-hidden flex flex-col h-full hover:border-foreground/50 transition-colors">
-                  {/* Image */}
-                  <div className="relative h-56 overflow-hidden bg-muted">
+                <div className="border border-border rounded-xl overflow-hidden flex flex-col h-full hover:border-foreground/50 transition-colors">
+                  
+                  <div className="relative h-48 sm:h-56 overflow-hidden bg-muted">
                     <Image
-                      src={project.image || "/placeholder.svg?height=300&width=400&query=project"}
+                      src={project.image}
                       alt={project.title}
                       width={400}
                       height={240}
@@ -146,13 +150,14 @@ export default function Projects() {
                     />
                   </div>
 
-                  {/* Content */}
-                  <div className="flex-1 p-6 flex flex-col gap-4">
+                  <div className="flex-1 p-5 sm:p-6 flex flex-col gap-4">
                     <div>
-                      <h3 className="text-xl font-semibold text-foreground mb-2 group-hover:text-muted-foreground transition-colors">
+                      <h3 className="text-lg sm:text-xl font-semibold text-foreground mb-1 group-hover:text-muted-foreground transition-colors">
                         {project.title}
                       </h3>
-                      <p className="text-sm text-muted-foreground leading-relaxed">{project.description}</p>
+                      <p className="text-sm text-muted-foreground leading-relaxed">
+                        {project.description}
+                      </p>
                     </div>
 
                     <div className="flex flex-wrap gap-2 mt-auto">
@@ -169,6 +174,7 @@ export default function Projects() {
                     <div className="flex items-center gap-1 text-foreground text-sm font-medium group-hover:gap-2 transition-all w-fit">
                       View →
                     </div>
+
                   </div>
                 </div>
               </a>
