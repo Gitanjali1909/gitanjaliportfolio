@@ -80,6 +80,15 @@ export default function Projects() {
       tags: ["React.js", "Tailwind CSS"],
       link: "https://gilded-raindrop-09e1a8.netlify.app/",
     },
+    {
+  id: 9,
+  title: "Codebase Q&A – AI Dev Assistant",
+  category: "web",
+  description: "Ask questions about any codebase and get AI-generated answers with context, file references, and code snippets.",
+  image: "/code-insight.png",
+  tags: ["React", "Node.js", "Express", "Tailwind", "AI Integration"],
+  link: "https://aggroso-six.vercel.app/", // ← add your deployed link or GitHub
+},
   ]
 
   const categories = [
