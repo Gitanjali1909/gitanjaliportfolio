@@ -89,6 +89,15 @@ export default function Projects() {
   tags: ["React", "Node.js", "Express", "Tailwind", "AI Integration"],
   link: "https://aggroso-six.vercel.app/", // ← add your deployed link or GitHub
 },
+{
+  id: 10,
+  title: "PDF Intelligence Chat",
+  category: "web",
+  description: "AI-powered PDF chat app with document upload, intelligent summaries, and RAG-powered conversations using Groq + ChromaDB.",
+  image: "/pdf-chat.png",  
+  tags: ["Next.js 15", "FastAPI", "Groq AI", "ChromaDB", "RAG", "TypeScript"],
+  link: "https://pdf-chat-liart.vercel.app/",  
+},
   ]
 
   const categories = [
