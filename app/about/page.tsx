@@ -30,8 +30,8 @@ export default function About() {
         "Developed and deployed the company website from Figma designs using Next.js, TypeScript, and Tailwind CSS.",
         "Built interactive dashboards with charts and graphs, improving data accessibility for users.",
         "Implemented smooth, modern animations with Framer Motion to enhance UX.",
-        "Resolved 50+ frontend bugs and boosted performance by 15%, reducing issue reports by 40%.",
-        "Created dynamic, user-friendly forms using React Hook Form, lowering submission errors by 30%.",
+        "Resolved frontend bugs and boosted performance",
+        "Created dynamic, user-friendly forms using React Hook Form, lowering submission errors.",
       ],
     },
     {
@@ -40,10 +40,10 @@ export default function About() {
       period: "June 2023 – Sept 2023",
       achievements: [
         "Developed responsive user interfaces using React.js, JavaScript, HTML, and CSS.",
-        "Helped achieve a 30% increase in user engagement and 20% faster load times.",
-        "Collaborated with UI/UX and backend teams to speed up delivery by 25%.",
-        "Debugged critical frontend issues, improving performance by 15% and reducing bug reports by 40%.",
-        "Used React Hook Form to enhance validation and cut form errors by 30%.",
+        "Helped increase in user engagement and faster load times.",
+        "Collaborated with UI/UX and backend teams to speed up delivery.",
+        "Debugged critical frontend issues, improving performance and reduced bug reports.",
+        "Used React Hook Form to enhance validation and cut form errors.",
         "Explored Flutter to understand mobile development workflows.",
       ],
     },
@@ -101,7 +101,7 @@ export default function About() {
             <div className="lg:col-span-2 space-y-6">
               <h2 className="text-3xl font-bold text-foreground">About</h2>
               <p className="text-base text-muted-foreground leading-relaxed">
-                I'm <span className="text-foreground font-medium">Gitanjali</span> — a frontend developer who loves
+                I'm <span className="text-foreground font-medium">Gitanjali</span> a frontend developer who loves
                 building clean, smooth, and functional interfaces that solve real problems.
               </p>
               <p className="text-base text-muted-foreground leading-relaxed">
@@ -111,7 +111,7 @@ export default function About() {
               <div className="space-y-4 pt-4">
                 <h3 className="font-medium text-foreground">Interests</h3>
                 <div className="grid grid-cols-2 sm:grid-cols-3 gap-4">
-                  {["Reading", "Writing", "Music", "Aesthetic Design", "Side Projects", "Cafe Hunting"].map(
+                  {["Reading", "Writing", "UI Experiments", "Side Projects", "Crazy Interfaces", "Building Things"].map(
                     (item, idx) => (
                       <div key={idx} className="text-sm text-muted-foreground hover:text-foreground transition-colors">
                         {item}
@@ -130,7 +130,7 @@ export default function About() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="mb-16">
             <h2 className="text-4xl font-bold text-foreground mb-2">Experience</h2>
-            <p className="text-muted-foreground">A timeline of my professional work.</p>
+            <p className="text-muted-foreground">(A timeline of my professional work.)</p>
           </div>
 
           <div className="space-y-12">
@@ -162,32 +162,96 @@ export default function About() {
       </section>
 
       {/* Skills */}
-      <section className="py-24">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="mb-16">
-            <h2 className="text-4xl font-bold text-foreground mb-2">Skills</h2>
-            <p className="text-muted-foreground">Technologies and tools I work with.</p>
-          </div>
+<section className="py-24">
+  <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div className="mb-16">
+      <h2 className="text-4xl font-bold text-foreground mb-2">Skills</h2>
+      <p className="text-muted-foreground">
+        Technologies I’ve used in real projects and internships.
+      </p>
+    </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-12">
-            {skillsData.map((category, idx) => (
-              <div key={idx} className="space-y-4">
-                <h3 className="font-semibold text-foreground text-sm uppercase tracking-wider">{category.category}</h3>
-                <div className="grid grid-cols-2 gap-3">
-                  {category.skills.map((skill, sidx) => (
-                    <div
-                      key={sidx}
-                      className="px-3 py-2 rounded-md bg-muted/40 border border-border/40 text-sm text-muted-foreground hover:border-border/80 hover:bg-muted/60 transition-all cursor-default"
-                    >
-                      {skill}
-                    </div>
-                  ))}
-                </div>
+    <div className="grid grid-cols-1 sm:grid-cols-2 gap-12">
+
+      {/* Frontend */}
+      <div className="space-y-4">
+        <h3 className="font-semibold text-foreground text-sm uppercase tracking-wider">
+          Frontend
+        </h3>
+        <div className="grid grid-cols-2 gap-3">
+          {["React.js", "Next.js", "TypeScript", "JavaScript", "Tailwind CSS", "Redux / Zustand"].map(
+            (skill, idx) => (
+              <div
+                key={idx}
+                className="px-3 py-2 rounded-md bg-muted/40 border border-border/40 text-sm text-muted-foreground hover:border-border/80 hover:bg-muted/60 transition-all cursor-default"
+              >
+                {skill}
               </div>
-            ))}
-          </div>
+            )
+          )}
         </div>
-      </section>
+      </div>
+
+      {/* Backend */}
+      <div className="space-y-4">
+        <h3 className="font-semibold text-foreground text-sm uppercase tracking-wider">
+          Backend
+        </h3>
+        <div className="grid grid-cols-2 gap-3">
+          {["Python", "Node.js", "FastAPI", "Express.js", "REST APIs", "SQL"].map(
+            (skill, idx) => (
+              <div
+                key={idx}
+                className="px-3 py-2 rounded-md bg-muted/40 border border-border/40 text-sm text-muted-foreground hover:border-border/80 hover:bg-muted/60 transition-all cursor-default"
+              >
+                {skill}
+              </div>
+            )
+          )}
+        </div>
+      </div>
+
+      {/* Data / AI */}
+      <div className="space-y-4">
+        <h3 className="font-semibold text-foreground text-sm uppercase tracking-wider">
+          Data & AI
+        </h3>
+        <div className="grid grid-cols-2 gap-3">
+          {["Pandas", "NumPy", "Scikit-learn", "Streamlit", "LLMs (OpenAI APIs)", "Embeddings / RAG basics"].map(
+            (skill, idx) => (
+              <div
+                key={idx}
+                className="px-3 py-2 rounded-md bg-muted/40 border border-border/40 text-sm text-muted-foreground hover:border-border/80 hover:bg-muted/60 transition-all cursor-default"
+              >
+                {skill}
+              </div>
+            )
+          )}
+        </div>
+      </div>
+
+      {/* Tools */}
+      <div className="space-y-4">
+        <h3 className="font-semibold text-foreground text-sm uppercase tracking-wider">
+          Tools
+        </h3>
+        <div className="grid grid-cols-2 gap-3">
+          {["Git", "GitHub", "VS Code", "Vercel", "Netlify", "Jupyter Notebook"].map(
+            (skill, idx) => (
+              <div
+                key={idx}
+                className="px-3 py-2 rounded-md bg-muted/40 border border-border/40 text-sm text-muted-foreground hover:border-border/80 hover:bg-muted/60 transition-all cursor-default"
+              >
+                {skill}
+              </div>
+            )
+          )}
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
     </main>
   )
 }

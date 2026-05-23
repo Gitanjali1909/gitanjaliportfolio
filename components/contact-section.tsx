@@ -129,7 +129,7 @@ export function ContactSection() {
                   required
                   rows={4}
                   className="w-full px-4 py-2 bg-background border border-border rounded-lg text-foreground placeholder-muted-foreground focus:outline-none focus:border-secondary transition-colors resize-none"
-                  placeholder="Drop the details—I'm listening."
+                  placeholder="Drop the details, I'm listening."
                 />
               </div>
 
@@ -154,7 +154,7 @@ export function ContactSection() {
               <h3 className="text-2xl font-bold text-foreground mb-6">Let's Connect</h3>
               <p className="text-muted-foreground leading-relaxed mb-8">
                 Whether you’re planning a project or just vibing with my work, reach out. I’m always open to new ideas, 
-                freelance gigs, internships, collabs—anything that’s actually fun and meaningful.
+                freelance gigs, internships, collabs, anything that’s actually fun and meaningful.
               </p>
             </div>
 

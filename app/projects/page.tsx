@@ -33,7 +33,7 @@ export default function Projects() {
       description: "Recommender system using TF-IDF + Cosine Similarity with clean, interactive output.",
       image: "/nextread.jpg",
       tags: ["Python", "TF-IDF", "Cosine Similarity", "Pandas"],
-      link: "https://github.com/Gitanjali1909/Book-Recommendation-system",
+      link: "https://book-recommendation-system-1.streamlit.app/",
     },
     {
       id: 4,

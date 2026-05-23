@@ -37,11 +37,10 @@ export default function Home() {
               </div>
 
               <p className="text-muted-foreground text-sm sm:text-base max-w-md leading-relaxed">
-                I build interfaces that look clean, feel smooth, and actually work the way users expect.
-                I mix frontend dev with data intuition so everything I ship isn't just pretty — it's smart.
-              </p>
+  I build interfaces that look clean, feel smooth, and actually do what users expect without making things complicated.
+  I like mixing frontend development with a bit of data thinking so what I build is not just good looking but actually useful too.
+</p>
 
-              {/* Buttons */}
               <div className="flex flex-col sm:flex-row gap-3 pt-2 sm:pt-4 w-full sm:w-auto">
                 <Link
                   href="/about"
